@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Annual Income Calculator</title>
+        <meta name="description" content="A simple calculator which calculates how much money you should make annually, based on your needs and expenses">
+        <meta name="author" content="Arben Husic">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="/images/coin.ico">
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo|Nunito" rel="stylesheet">
+		<link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/rangeslider.css" rel="stylesheet" type="text/css">
+        <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+        <meta property="og:image" content="/images/postimage.png">
+	</head>
+
+	<body>
+        
+        <div class="header">
+            <div class="header-inner">
+                <div class="header-text"><h1>How much you should make annually</h1></div>
+                <div class="header-image"><img src="/images/headerimage.png" alt="Image"/></div>
+            </div>
+        </div>
+        
+        <div class="main-wrapper">
+            
+            <form id="quiz">
+            
+                <div class="question-row">
+
+                    <div class="question-title-col"><h3>Your Age:</h3></div>
+
+                    <div class="question-content-col">
+                        <div class="range-output"><output class="output"></output></div>
+                        <input id="question1" type="range" min="22" max="60" value="22">
+                    </div>
+
+                </div>
+
+                <div class="question-row">
+
+                    <div class="question-title-col"><h3>Martial Status:</h3></div>
+
+                    <div class="question-content-col">
+                        <div id="question2" class="image-inputs-container">
+                            <div class="image-answers">
+                                <input type="radio" name="status" value="1" id="status-a" checked="checked">
+                                <label for="status-a">
+                                    <img src="/images/rockon.png" alt="none">
+                                    <h4>Single</h4>
+                                </label>
+                            </div>
+                            <div class="image-answers">
+                                <input type="radio" name="status" value="2" id="status-b">
+                                <label for="status-b">
+                                    <img src="/images/rings.png" alt="none">
+                                    <h4>Married</h4>
+                                </label>
+                            </div>
+                        </div>   
+                    </div>
+
+                </div>
+
+                <div class="question-row">
+
+                    <div class="question-title-col"><h3>Children:</h3></div>
+
+                    <div class="question-content-col">
+                        <div id="question3" class="image-inputs-container">
+
+                            <input type="radio" name="children" value="1" id="children-a" checked="checked">
+                            <div class="circle-answers">
+                                <label for="children-a"><h4>0</h4></label>
+                            </div>
+
+                            <input type="radio" name="children" value="2" id="children-b">
+                            <div class="circle-answers">
+                                <label for="children-b"><h4>1</h4></label>
+                            </div>
+
+                            <input type="radio" name="children" value="3" id="children-c">
+                            <div class="circle-answers">
+                                <label for="children-c"><h4>2</h4></label>
+                            </div>
+
+                            <input type="radio" name="children" value="4" id="children-d">
+                            <div class="circle-answers">
+                                <label for="children-d"><h4>3+</h4></label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="question-row">
+
+                    <div class="question-title-col"><h3>Any cars?</h3></div>
+
+                    <div class="question-content-col">
+                        <div id="question4" class="image-inputs-container">
+
+                            <input type="radio" name="cars" value="1" id="cars-a" checked="checked">
+                            <div class="circle-answers">
+                                <label for="cars-a"><h4>0</h4></label>
+                            </div>
+
+                            <input type="radio" name="cars" value="2" id="cars-b">
+                            <div class="circle-answers">
+                                <label for="cars-b"><h4>1</h4></label>
+                            </div>
+
+                            <input type="radio" name="cars" value="3" id="cars-c">
+                            <div class="circle-answers">
+                                <label for="cars-c"><h4>2</h4></label>
+                            </div>
+
+                            <input type="radio" name="cars" value="4" id="cars-d">
+                            <div class="circle-answers">
+                                <label for="cars-d"><h4>3+</h4></label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="question-row">
+
+                    <div class="question-title-col"><h3>Vices?</h3></div>
+
+                    <div class="question-content-col">
+                        <div id="question5" class="image-inputs-container">
+                            <div class="image-answers">
+                                <input type="radio" name="vice" value="1" id="vice-a" checked="checked">
+                                <label for="vice-a">
+                                    <img src="/images/nerd.png" alt="none">
+                                    <h4>Nerd</h4>
+                                </label>
+                            </div>
+                            <div class="image-answers">
+                                <input type="radio" name="vice" value="2" id="vice-b">
+                                <label for="vice-b">
+                                    <img src="/images/smoke.png" alt="none">
+                                    <h4>Smoker</h4>
+                                </label>
+                            </div>
+                            <div class="image-answers">
+                                <input type="radio" name="vice" value="3" id="vice-c">
+                                <label for="vice-c">
+                                    <img src="/images/alcohol.png" alt="none">
+                                    <h4>Drinker</h4>
+                                </label>
+                            </div>
+                            <div class="image-answers">
+                                <input type="radio" name="vice" value="4" id="vice-d">
+                                <label for="vice-d">
+                                    <img src="/images/cig-and-alc.png" alt="none">
+                                    <h4>Both</h4>
+                                </label>
+                            </div>
+                        </div>   
+                    </div>
+
+                </div>
+
+                <div class="submit-row">
+
+                    <input type="button" id="submit-button" class="flat-button" value="Calculate">
+
+                </div>
+                
+            </form>
+            
+            <div class="spinner-container">
+                
+                <img src="/images/spinner.gif" alt="Calculating"/>
+                <br>
+                <h3>Calculating</h3>
+            
+            </div>
+            
+            <div class="results-container">
+                
+                <h4>Your annual income should be:</h4>
+                <br>
+                <h2 style="font-size: 48px;"></h2>
+            
+            </div>
+        
+        </div>
+        
+        <div class="footer">
+        
+            <div class="footer-inner">
+            
+                <div class="resources-container">
+                    <p class="first-link">Graphics by: <a href="https://freepik.com" target="_blank">Freepik</a></p>
+                    <p>Range slider by: <a href="http://rangeslider.js.org/" target="_blank">André Ruffert</a></p>
+                </div>
+                
+                <div class="credits-container">
+                    <p>Made by: <a href="https://benhysa.me" target="_blank">Arben Husic</a></p>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="rangeslider.min.js"></script>
+        <script src="mainfunctions.js"></script>
+	</body>
+
+</html>
