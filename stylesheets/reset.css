@@ -181,6 +181,7 @@ em strong {
 a, article, div, h1, h2, h3, h4, h5, h6, img, section, span {
     -moz-user-select: text; 
     -webkit-user-select: text; 
+	user-select: text;
 }
 input, select, textarea { 
     -webkit-appearance: none; 
