@@ -179,8 +179,8 @@ em strong {
     -webkit-tap-highlight-color: transparent; 
 }
 a, article, div, h1, h2, h3, h4, h5, h6, img, section, span {
-    -moz-user-select: all; 
-    -webkit-user-select: all; 
+    -moz-user-select: text; 
+    -webkit-user-select: text; 
 }
 input, select, textarea { 
     -webkit-appearance: none; 
